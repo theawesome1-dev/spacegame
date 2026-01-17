@@ -3,6 +3,7 @@ using UnityEngine;
 public class GravityAttractor : MonoBehaviour
 {
     public float gravity = -10;
+    public Vector3 up;
 
     public void Attract(Rigidbody rigidbody)
     {

@@ -8,6 +8,7 @@ public class playerGravity : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        transform.rotation = rb.rotation;
         rb.useGravity = false;
         rb.constraints = RigidbodyConstraints.FreezeRotation;
     }
