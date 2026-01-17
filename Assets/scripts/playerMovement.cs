@@ -20,16 +20,49 @@ public class playerMovement : MonoBehaviour
     private Vector3 currentVelocity;
     public GravityAttractor gravityAttractor = null;
 
+    public Animator _animator;
+
 
     void FixedUpdate()
     {
         direction = move.action.ReadValue<Vector2>();
-          //    currentVelocity = Vector3.SmoothDamp(currentVelocity, new Vector3(direction.x, 0 ,direction.y)  * speed, ref smoothMoveVelocity, smoothTime);
-    Vector3 dir = new Vector3(direction.x, 0f,direction.y);
-        //rb.linearVelocity = currentVelocity * speed;
-         rb.linearDamping = (speed / maxSpeed);
+        
+        Vector3 dir = new Vector3(direction.x, 0f,direction.y);
+        if (direction.x > 0)
+        {
+            _animator.SetBool("isWalkingRight", true);
+            _animator.SetBool("isWalkingLeft", false);
+        }
+        else if (direction.x < 0)
+        {
+            _animator.SetBool("isWalkingLeft", true);
+            _animator.SetBool("isWalkingRight", false);
+        }
+        else
+        {
+            _animator.SetBool("isWalkingLeft", false);
+            _animator.SetBool("isWalkingRight", false);
+        }
+        if (direction.y > 0)
+        {
+            _animator.SetBool("isWalkingBack", true);
+            _animator.SetBool("isWalkingForward", false);
+        }
+        else if (direction.y < 0)
+        {
+            _animator.SetBool("isWalkingForward", true);
+            _animator.SetBool("isWalkingBack", false);
+        }
+        else
+        {
+            _animator.SetBool("isWalkingBack", false);
+            _animator.SetBool("isWalkingFB", false);
+        }
+
+        
+        rb.linearDamping = (speed / maxSpeed);
         rb.AddRelativeForce(dir* speed);
-            rb.AddForce(gravityAttractor.up * stickForce, ForceMode.Acceleration);
+        rb.AddForce(gravityAttractor.up * stickForce, ForceMode.Acceleration);
     }
     
 
@@ -37,6 +70,4 @@ public class playerMovement : MonoBehaviour
     {
         Debug.Log(inputValue.Get<Vector2>());
     }
-
-    
 }
