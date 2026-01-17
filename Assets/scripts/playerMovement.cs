@@ -56,7 +56,7 @@ public class playerMovement : MonoBehaviour
         else
         {
             _animator.SetBool("isWalkingBack", false);
-            _animator.SetBool("isWalkingFB", false);
+            _animator.SetBool("isWalkingForward", false);
         }
 
         
