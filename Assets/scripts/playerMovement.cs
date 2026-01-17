@@ -25,17 +25,10 @@ public class playerMovement : MonoBehaviour
     {
         direction = move.action.ReadValue<Vector2>();
           //    currentVelocity = Vector3.SmoothDamp(currentVelocity, new Vector3(direction.x, 0 ,direction.y)  * speed, ref smoothMoveVelocity, smoothTime);
-    Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+    Vector3 dir = new Vector3(direction.x, 0f,direction.y);
         //rb.linearVelocity = currentVelocity * speed;
-        Vector3 moveDir = Vector3.ProjectOnPlane(direction, gravityAttractor.up).normalized;
-    if (flatVel.magnitude > maxSpeed)
-    {
-        Vector3 limitedVel = flatVel.normalized * maxSpeed;
-        rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
-        
-    }    
-        Debug.Log(flatVel.magnitude);
-        rb.AddRelativeForce(moveDir* speed, ForceMode.Acceleration);
+         rb.linearDamping = (speed / maxSpeed);
+        rb.AddRelativeForce(dir* speed);
             rb.AddForce(gravityAttractor.up * stickForce, ForceMode.Acceleration);
     }
     

@@ -348,7 +348,7 @@ MonoBehaviour:
   rb: {fileID: 652665455}
   direction: {x: 0, y: 0}
   smoothTime: 0.1
-  speed: 35
+  speed: 50
   maxSpeed: 20
   stickForce: 40
   gravityAttractor: {fileID: 2144036610}
@@ -717,8 +717,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625830774}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.29737145, y: 0, z: 0, w: 0.9547619}
-  m_LocalPosition: {x: 6.8, y: 38.78011, z: -7.2989182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.8, y: 29.33, z: -18.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -767,6 +767,7 @@ GameObject:
   - component: {fileID: 1684905534}
   - component: {fileID: 1684905533}
   - component: {fileID: 1684905535}
+  - component: {fileID: 1684905536}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -825,8 +826,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684905531}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.29737145, y: -0, z: -0, w: 0.9547619}
-  m_LocalPosition: {x: 6.8, y: 38.78011, z: -7.2989182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.8, y: 29.33, z: -18.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -844,7 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886251e9a18ece04ea8e61686c173e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePositionComposer
-  CameraDistance: 17
+  CameraDistance: 24.8
   DeadZoneDepth: 1000
   Composition:
     ScreenPosition: {x: 0, y: 0}
@@ -863,6 +864,19 @@ MonoBehaviour:
     Time: 0
     Smoothing: 0
     IgnoreY: 0
+--- !u!114 &1684905536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684905531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4afa82ae3200b82408d605c3dbdd1e38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineRotateWithFollowTarget
+  Damping: 0
 --- !u!1 &2144036604
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +988,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.35357, y: 0.75, z: 0.35357}
-  m_LocalScale: {x: 50, y: 9.2, z: 50}
+  m_LocalScale: {x: 51.77, y: 9.525681, z: 51.77}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
