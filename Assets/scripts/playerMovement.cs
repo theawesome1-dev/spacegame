@@ -22,7 +22,7 @@ public class playerMovement : MonoBehaviour
         direction = move.action.ReadValue<Vector2>();
               currentVelocity = Vector3.SmoothDamp(currentVelocity, new Vector3(direction.x, 0 ,direction.y)  * speed, ref smoothMoveVelocity, smoothTime);
 
-        rb.linearVelocity = direction.normalized * speed;
+        rb.linearVelocity = currentVelocity * speed;
     }
 
     void onMove(InputValue inputValue)
