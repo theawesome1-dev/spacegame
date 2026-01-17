@@ -6,7 +6,6 @@ using UnityEngine;
 
 using UnityEngine.InputSystem;
 
-
 public class playerMovement : MonoBehaviour
 
 {
@@ -17,6 +16,7 @@ public class playerMovement : MonoBehaviour
     public float smoothTime = 0.1f;
     public float speed = 5;
     private Vector3 currentVelocity;
+
     void Update()
     {
         direction = move.action.ReadValue<Vector2>();
