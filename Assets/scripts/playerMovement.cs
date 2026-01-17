@@ -13,11 +13,16 @@ public class playerMovement : MonoBehaviour
     public InputActionReference move;
     public CharacterController character;
     public Vector2 direction;
+    private Vector3 smoothMoveVelocity;
+    public float smoothTime = 0.1f;
     public float speed = 5;
+    private Vector3 currentVelocity;
     void Update()
     {
         direction = move.action.ReadValue<Vector2>();
-        character.Move(direction * Time.deltaTime * speed);
+              currentVelocity = Vector3.SmoothDamp(currentVelocity, new Vector3(direction.x, 0 ,direction.y)  * speed, ref smoothMoveVelocity, smoothTime);
+
+        character.Move(currentVelocity* Time.deltaTime);
     }
 
     void onMove(InputValue inputValue)

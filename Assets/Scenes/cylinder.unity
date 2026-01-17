@@ -253,6 +253,7 @@ MonoBehaviour:
   move: {fileID: 1042648322}
   character: {fileID: 652665452}
   direction: {x: 0, y: 0}
+  smoothTime: 0.1
   speed: 5
 --- !u!114 &652665454
 MonoBehaviour:
@@ -555,13 +556,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625830774}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.94, z: -10}
+  m_LocalRotation: {x: 0.36272874, y: -0.36692575, z: 0.15808715, w: 0.8419036}
+  m_LocalPosition: {x: 18.4, y: 23.18, z: -0.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 46.617, y: -407.098, z: 0}
 --- !u!1 &2144036604
 GameObject:
   m_ObjectHideFlags: 0
