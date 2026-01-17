@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class GravityAttractor : MonoBehaviour
 {
-    public float gravity = -10;
+    public float gravity = -50;
     public Vector3 up;
 
     public void Attract(Rigidbody rigidbody)
     {
-
-        Vector3 up = (rigidbody.position - transform.position).normalized;
+        Vector3 up = (rigidbody.position - transform.position).normalized;//
         Vector3 localUp = rigidbody.transform.up;   
 
         rigidbody.AddForce(up * gravity);

@@ -13,9 +13,8 @@ public class playerGravity : MonoBehaviour
         rb.constraints = RigidbodyConstraints.FreezeRotation;
     }
 
-    public void Update()
+    private void FixedUpdate()
     {
-        
         gravityAttractor.Attract(rb);
     }
 }
