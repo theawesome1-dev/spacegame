@@ -19,6 +19,8 @@ public class textSystem : MonoBehaviour
     public GameObject pannelText;
     InputSystem_Actions input;
     private bool inputting = false;
+    private float time;
+    public float finTime;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,7 +34,7 @@ public class textSystem : MonoBehaviour
     {
         
         input.Player.Enable();
-        if (index < lines.Length && isFinished == false && inputting == false)
+        if (index < lines.Length &&  inputting == false)
         {
             if (index == 0)
             {
@@ -47,6 +49,11 @@ public class textSystem : MonoBehaviour
         if (index == lines.Length && input.Player.Interact.WasReleasedThisFrame())
         {
             pannelText.SetActive(false);
+            gui.text = string.Empty;
+            time = Time.time + finTime;
+        }
+        if (Time.time >= time && pannelText.activeSelf == false)
+        {
             isFinished = true;
         }
     }
@@ -73,7 +80,7 @@ public class textSystem : MonoBehaviour
 
         foreach (char c in lines[index].ToCharArray())
         {
-            gui.text += c;
+            gui.text += c; 
             yield return new WaitForSeconds(textSpeed);
         }
         inputting = false;
