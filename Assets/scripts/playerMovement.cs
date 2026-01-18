@@ -69,7 +69,7 @@ public class playerMovement : MonoBehaviour
             _animator.SetBool("isWalkingForward", false);
         }
 
-        if (!(rb.position.z <= -8.5 && direction.y < 0  || rb.position.z >= 2.0 && direction.y > 0))
+        if (!(rb.position.z <= -8.5 && direction.y < 0  || rb.position.z >= 2.0 && direction.y > 0) && textSystem.isFinished == true)
         {
         rb.linearDamping = (speed / maxSpeed);
         rb.AddRelativeForce(dir* speed);
