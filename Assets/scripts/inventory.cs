@@ -13,7 +13,7 @@ public class inventory : MonoBehaviour
     {
         {"ladder", false},
         {"Rod", false},
-        {"Hat", false}
+        {"propeller", false}
     };
      public Dictionary<string, bool> shipParts = new Dictionary<string, bool>()
     {
