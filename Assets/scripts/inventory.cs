@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class inventory : MonoBehaviour
 {
       public GameObject[] item;
-      public Image[] parts;
+      public List<Image> parts;
 
     public Dictionary<string, bool> items = new Dictionary<string, bool>()
     {
