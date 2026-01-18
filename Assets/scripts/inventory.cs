@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class inventory : MonoBehaviour
 {
       public GameObject[] item;
+      public Image[] parts;
 
     public Dictionary<string, bool> items = new Dictionary<string, bool>()
     {
@@ -34,6 +35,20 @@ public class inventory : MonoBehaviour
            if(key.Key == gameObject.name)
             {
                 gameObject.SetActive(key.Value);
+            }
+           }
+        }
+          foreach(var key in items)
+        {
+           foreach(Image gameObject in parts)
+           {
+           if(key.Key == gameObject.name)
+            {
+               if(key.Value == true)
+                    {
+                        gameObject.tintColor = new Color(255f, 255f, 255f);
+
+                    }
             }
            }
         }
