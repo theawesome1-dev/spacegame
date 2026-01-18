@@ -25,10 +25,10 @@ public class give : MonoBehaviour
 
         if (other.tag == "Player")
         {
-            Debug.Log("plate");
+            //Debug.Log("plate");
             if (input.Player.Interact.WasReleasedThisFrame() && textSystem.isFinished == true)
             {
-                Debug.Log("Start text");
+                //Debug.Log("Start text");
                 inventory.items["ladder"] = true;
                 inventory.updateUI();
                 textSystem.startText(text);
