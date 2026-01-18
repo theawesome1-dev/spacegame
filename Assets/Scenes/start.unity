@@ -664,7 +664,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'press enter '
+  m_text: 'press x '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b8d95736ea5609845967a28c37381f4d, type: 2}
   m_sharedMaterial: {fileID: 8240407499827130384, guid: b8d95736ea5609845967a28c37381f4d, type: 2}
