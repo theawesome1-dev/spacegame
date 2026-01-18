@@ -3,6 +3,7 @@ using UnityEngine;
 public class give : MonoBehaviour
 {
     public textSystem textSystem;
+    public inventory inventory;
     public string[] text;
     InputSystem_Actions input;
     
@@ -28,7 +29,6 @@ public class give : MonoBehaviour
             if (input.Player.Interact.WasReleasedThisFrame() && textSystem.isFinished == true)
             {
                 Debug.Log("Start text");
-
                 textSystem.startText(text);
             }
         }
