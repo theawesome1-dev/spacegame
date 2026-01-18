@@ -28,6 +28,7 @@ public class playerMovement : MonoBehaviour
         direction = move.action.ReadValue<Vector2>();
         
         Vector3 dir = new Vector3(direction.x, 0f,direction.y);
+        
         //animate
         if (direction.x > 0)
         {
@@ -59,9 +60,13 @@ public class playerMovement : MonoBehaviour
             _animator.SetBool("isWalkingBack", false);
             _animator.SetBool("isWalkingForward", false);
         }
-        rb.linearDamping = (speed / maxSpeed);
-        rb.AddRelativeForce(dir* speed);
-        rb.AddForce(gravityAttractor.up * stickForce, ForceMode.Acceleration);
+
+        if (!(rb.position.z <= -8.5 && direction.y < 0  || rb.position.z >= 8.5 && direction.y > 0))
+        {
+            rb.linearDamping = (speed / maxSpeed);
+            rb.AddRelativeForce(dir* speed);
+            rb.AddForce(gravityAttractor.up * stickForce, ForceMode.Acceleration);
+        }
     }
     
 
