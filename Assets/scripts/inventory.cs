@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class inventory : MonoBehaviour
 {
-  
+      public GameObject[] item;
+
     public Dictionary<string, bool> items = new Dictionary<string, bool>()
     {
         {"ladder", false},
@@ -27,7 +29,13 @@ public class inventory : MonoBehaviour
     {
           foreach(var key in items)
         {
-            GameObject.Find(key.Key).SetActive(key.Value);
+           foreach(GameObject gameObject in item)
+           {
+           if(key.Key == gameObject.name)
+            {
+                gameObject.SetActive(key.Value);
+            }
+           }
         }
     }
     // Update is called once per frame
