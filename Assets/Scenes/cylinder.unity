@@ -311,9 +311,10 @@ GameObject:
   m_Component:
   - component: {fileID: 89138891}
   - component: {fileID: 89138890}
+  - component: {fileID: 89138892}
   m_Layer: 0
   m_Name: hitbox
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,6 +355,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 47.335}
+--- !u!114 &89138892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89138889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c15ba92dc9f162c957716df393d866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::give
+  textSystem: {fileID: 368348199}
+  text:
+  - You took the hat
+  - now the scarecrow is not as scary
 --- !u!1 &257076977
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,9 +513,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::textSystem
   lines: []
   gui: {fileID: 730887887}
-  textSpeed: 0.1
-  isFinished: 0
+  textSpeed: 0.01
+  isFinished: 1
   pannelText: {fileID: 649532082}
+  finTime: 0.5
 --- !u!1 &420184472
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &649532083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -899,8 +917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000022888184, y: -0.000015258789}
-  m_SizeDelta: {x: 800, y: 646.69885}
+  m_AnchoredPosition: {x: 0.000022888184, y: 15.605011}
+  m_SizeDelta: {x: 799.9998, y: 615.4886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649532084
 MonoBehaviour:
@@ -959,7 +977,7 @@ GameObject:
   - component: {fileID: 652665459}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1232,8 +1250,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -238, y: 22}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.0000065565, y: -10}
+  m_SizeDelta: {x: 672.9553, y: 119.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730887887
 MonoBehaviour:
@@ -1282,8 +1300,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24.48
+  m_fontSizeBase: 24.48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
