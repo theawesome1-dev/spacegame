@@ -28,6 +28,7 @@ public class playerMovement : MonoBehaviour
         direction = move.action.ReadValue<Vector2>();
         
         Vector3 dir = new Vector3(direction.x, 0f,direction.y);
+        //animate
         if (direction.x > 0)
         {
             _animator.SetBool("isWalkingRight", true);
@@ -58,8 +59,6 @@ public class playerMovement : MonoBehaviour
             _animator.SetBool("isWalkingBack", false);
             _animator.SetBool("isWalkingForward", false);
         }
-
-        
         rb.linearDamping = (speed / maxSpeed);
         rb.AddRelativeForce(dir* speed);
         rb.AddForce(gravityAttractor.up * stickForce, ForceMode.Acceleration);
