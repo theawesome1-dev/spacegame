@@ -28,10 +28,10 @@ public class give : MonoBehaviour
 
         if (other.tag == "Player")
         {
-            //Debug.Log("plate");
+            Debug.Log("plate");
             if (input.Player.Interact.WasReleasedThisFrame() && textSystem.isFinished == true)
             {
-                //Debug.Log("Start text");
+                Debug.Log("Start text");
                 inventory.items["propeller"] = true;
                 inventory.updateUI();
                 _animator.SetBool("HatTaken", true);
