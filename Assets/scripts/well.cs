@@ -1,18 +1,17 @@
 using UnityEngine;
-using UnityEngine.Rendering.RenderGraphModule;
 
-public class hatguyGive : MonoBehaviour
+public class well : MonoBehaviour
 {
     public textSystem textSystem;
     public inventory inventory;
     public string[] text1;
     public string[] text2;
-    public string[] text3;
-    private bool hasSpokenBefore = false;
     
     public Animator _animator;
 
     InputSystem_Actions input;
+
+    public GameObject game;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,7 +27,6 @@ public class hatguyGive : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        
         input.Player.Enable();
 
         if (other.tag == "Player")
@@ -37,32 +35,20 @@ public class hatguyGive : MonoBehaviour
             if (input.Player.Interact.WasReleasedThisFrame() && textSystem.isFinished == true)
             {
                 Debug.Log("Start text");
-                
-                print("buh");
-                
                 //if have hat
-                if (inventory.items["propeller"] == true)
+                if (inventory.items["Rod"] == true)
                 {
-                    if (hasSpokenBefore)
-                    {
-                        textSystem.startText(text3);
-                    }
-                    else
-                    {
-                        textSystem.startText(text2);
-                    }
-                    inventory.items["propeller"] = false;
-                    inventory.shipParts["thruster"] = true;
-                    _animator.SetBool("HasNewHat", true);
+                    textSystem.startText(text2);
+                    inventory.items["Rod"] = false;
+                    inventory.shipParts["ship hull"] = true;
+                    _animator.SetBool("ThingTaken", true);
+                   // game.SetActive(false);
                     inventory.updateUI();
                 }
                 else
                 {
                     textSystem.startText(text1);
-                    hasSpokenBefore = true;
                 }
-                
-                
             }
         }
     }

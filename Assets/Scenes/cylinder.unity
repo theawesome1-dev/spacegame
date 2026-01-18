@@ -203,12 +203,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23377519}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18780221, y: 0.08093764, z: -0.88926065, w: 0.40913934}
-  m_LocalPosition: {x: 24.078114, y: -25.168278, z: 5.5237527}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0.028570404, y: 0.1539184, z: 0.048754863, w: 0.9864663}
+  m_LocalPosition: {x: 0.62329125, y: 1.9564049, z: 2.789166}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2119909485}
+  m_Father: {fileID: 1042037196}
   m_LocalEulerAnglesHint: {x: 17.315, y: -16.29, z: -133.083}
 --- !u!1 &35252168
 GameObject:
@@ -895,12 +895,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242117543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.030304989, y: 0.0040443973, z: 0.42018932, w: 0.90692127}
-  m_LocalPosition: {x: -23.68, y: 21.46, z: 1.8399997}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.028410211, y: -0.011296434, z: -0.07714105, w: 0.99655133}
+  m_LocalPosition: {x: 0.8712954, y: -0.006638527, z: -0.49000025}
+  m_LocalScale: {x: 0.5000822, y: 0.5008531, z: 0.9962784}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1683503413}
   m_LocalEulerAnglesHint: {x: 2.956, y: 1.882, z: 49.766}
 --- !u!1 &246279174
 GameObject:
@@ -1159,6 +1159,97 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262901560}
   m_CullTransparentMesh: 1
+--- !u!1 &316153881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 316153882}
+  - component: {fileID: 316153883}
+  m_Layer: 0
+  m_Name: ship fixed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &316153882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316153881}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.44, y: 33.38, z: -6.290287}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &316153883
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316153881}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 788d27f2adfc4bb47bf37ae315101871, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.24, y: 3.65}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &368348197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1d506f8b55c89eabf4442ee9a8d1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::textSystem
-  lines: []
+  lines:
+  - Oh, no! Your ship crashed! The pieces are everywhere. Good thing you can still
+    press 'X' to interact!
   gui: {fileID: 730887887}
   textSpeed: 0.01
   isFinished: 1
@@ -1310,7 +1403,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 368348198}
-  - {fileID: 698817610}
   - {fileID: 35252169}
   - {fileID: 465279943}
   - {fileID: 839149969}
@@ -1341,7 +1433,10 @@ MonoBehaviour:
   - {fileID: 465279942}
   - {fileID: 697794778}
   - {fileID: 839149968}
-  parts: []
+  parts:
+  - {fileID: 262901562}
+  - {fileID: 1156848252}
+  - {fileID: 883313012}
 --- !u!1 &457029254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,9 +1539,11 @@ GameObject:
   - component: {fileID: 463298392}
   - component: {fileID: 463298391}
   - component: {fileID: 463298390}
+  - component: {fileID: 463298394}
+  - component: {fileID: 463298393}
   m_Layer: 0
   m_Name: well with thing
-  m_TagString: Untagged
+  m_TagString: trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1547,6 +1644,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 38.306}
+--- !u!114 &463298393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463298389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20143e3a52e85acbdad5b2820572495d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  textSystem: {fileID: 368348199}
+  inventory: {fileID: 420184477}
+  text1:
+  - The piece of your ship\u2019s hull is too deep to reach.
+  text2:
+  - "You got the ship\u2019s hull with your fishing rod! The old man appreciates
+    your company."
+  _animator: {fileID: 463298390}
+  game: {fileID: 0}
+--- !u!65 &463298394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463298389}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.0145426, y: 4.79, z: 11.247068}
+  m_Center: {x: 0.547729, y: -0.0000000038588013, z: -5.523535}
 --- !u!1 &465279942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,7 +2547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &649532083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2559,7 +2698,7 @@ Transform:
   m_GameObject: {fileID: 652665449}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3, y: 38.2, z: -7.22}
+  m_LocalPosition: {x: -0.94, y: 33.09, z: -7.22}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2612,6 +2751,8 @@ MonoBehaviour:
   stickForce: 40
   gravityAttractor: {fileID: 2144036610}
   _animator: {fileID: 652665458}
+  textSystem: {fileID: 368348199}
+  pressX: {fileID: 0}
 --- !u!114 &652665454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2982,56 +3123,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697794778}
   m_CullTransparentMesh: 1
---- !u!1 &698817609
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 698817610}
-  - component: {fileID: 698817611}
-  m_Layer: 5
-  m_Name: items
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &698817610
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698817609}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 420184476}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &698817611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698817609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75881ac48995fd4a0b70e0efb8739bfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::inventory
-  item: []
-  parts: []
 --- !u!1 &730887884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4057,6 +4148,8 @@ GameObject:
   m_Component:
   - component: {fileID: 988535806}
   - component: {fileID: 988535805}
+  - component: {fileID: 988535808}
+  - component: {fileID: 988535807}
   m_Layer: 0
   m_Name: broken ship (1)
   m_TagString: Untagged
@@ -4136,8 +4229,50 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2119909485}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988535807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988535804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57baf4c947f4345bca1544f43f25f63a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  textSystem: {fileID: 368348199}
+  inventory: {fileID: 420184477}
+  text1:
+  - "It\u2019s missing the thruster, a leg, and a piece of its hull."
+  text2:
+  - "You repaired your ship! It\u2019s time to return to the adventure. Perhaps you\u2019ll
+    find time to visit this small planet later."
+  brokenShip: {fileID: 988535804}
+  fixedShip: {fileID: 316153881}
+--- !u!65 &988535808
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988535804}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.2, y: 3.44, z: 5.5615344}
+  m_Center: {x: 0, y: 0, z: -2.6807668}
 --- !u!1 &1009969998
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,6 +4466,7 @@ GameObject:
   - component: {fileID: 1042037196}
   - component: {fileID: 1042037195}
   - component: {fileID: 1042037197}
+  - component: {fileID: 1042037198}
   m_Layer: 0
   m_Name: ladder girl
   m_TagString: Untagged
@@ -4409,8 +4545,9 @@ Transform:
   m_LocalPosition: {x: 22.339998, y: -20.86, z: 0.3857051}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2119909485}
+  m_Children:
+  - {fileID: 23377521}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 6.88, y: -1.248, z: -135.559}
 --- !u!65 &1042037197
 BoxCollider:
@@ -4431,8 +4568,28 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.47, y: 1.4100001, z: 0.2}
-  m_Center: {x: -0.000000007450581, y: 0, z: 0}
+  m_Size: {x: 4.1024737, y: 1.4100001, z: 5.258296}
+  m_Center: {x: -0.12823272, y: -0.0000008128388, z: -2.7290769}
+--- !u!114 &1042037198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042037194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 080a4d2b1d2a08439ac807bcbaf9feaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  textSystem: {fileID: 368348199}
+  inventory: {fileID: 420184477}
+  text1:
+  - Howdy, neighbor!
+  - Borrow my ladder? Of course!  I was about done installing my disappearing windows
+    anyway. Good luck!
+  text2: []
+  game: {fileID: 23377519}
 --- !u!1 &1043318042
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,10 +5131,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.046277087, y: 0.073855005, z: -0.5289493, w: 0.84416616}
   m_LocalPosition: {x: -23.59, y: -32.32, z: 9.17}
-  m_LocalScale: {x: 2.2122, y: 2.2121997, z: 2.2121997}
+  m_LocalScale: {x: 2.2121997, y: 2.2121997, z: 2.2121994}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2119909485}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 10, z: -64.142}
 --- !u!1 &1119389862
 GameObject:
@@ -5262,8 +5419,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1134416133}
   - component: {fileID: 1134416132}
+  - component: {fileID: 1134416135}
+  - component: {fileID: 1134416134}
   m_Layer: 0
-  m_Name: tree (1)
+  m_Name: tree ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5338,11 +5497,51 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.96305174, y: -0.25897568, z: -0.073909834, w: -0.0006028963}
   m_LocalPosition: {x: -19.635202, y: -29.12, z: 10.67}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2}
+  m_LocalScale: {x: 2.5, y: 2.5000007, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2119909485}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 182.26, y: 8.173004, z: 29.940994}
+--- !u!114 &1134416134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134416131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5260a2c7dafeed46912da5f07c318e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::treeGive
+  textSystem: {fileID: 368348199}
+  inventory: {fileID: 420184477}
+  text1:
+  - The tree is too tall for you to climb!
+  text2:
+  - "You got the ship\u2019s leg! The ladder was remarkably sturdy."
+  game: {fileID: 1115525774}
+--- !u!65 &1134416135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134416131}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.505708, y: 7.7900023, z: 11.70644}
+  m_Center: {x: -0.28784353, y: -0.000000004498787, z: 5.7531924}
 --- !u!1 &1156848250
 GameObject:
   m_ObjectHideFlags: 0
@@ -6190,7 +6389,7 @@ Transform:
   m_GameObject: {fileID: 1436976739}
   serializedVersion: 2
   m_LocalRotation: {x: 0.49657604, y: -0.8679933, z: -0, w: 0}
-  m_LocalPosition: {x: -26.43, y: 18.29, z: 5.75}
+  m_LocalPosition: {x: -25.83, y: 17.94, z: 5.75}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6734,8 +6933,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4100004, y: 2.530001, z: 0.20000003}
-  m_Center: {x: -0.64390254, y: 1.210976, z: -0.000000001056256}
+  m_Size: {x: 4.8082685, y: 2.5300012, z: 4.910396}
+  m_Center: {x: -0.16631497, y: 1.2109721, z: -2.5551777}
 --- !u!114 &1578116760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6749,13 +6948,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::hatguyGive
   textSystem: {fileID: 368348199}
-  inventory: {fileID: 698817611}
+  inventory: {fileID: 420184477}
   text1:
-  - 'A good star-rising to you! A thruster? This is my hat! It came from the stars! '
+  - A good star-rising to you! A thruster? This is my hat! It came from the stars!
   - "My head will be ever so cold without it\u2026 I\u2019ll give you my hat if you
     can find me another one."
   text2:
-  - This hat is beautiful! You can have your fancy star hat.
+  - A good star-rising to you! Wow! That's a beautiful hat you got there! My hat
+    came from the stars.
+  - "You want my hat? My head will be ever so cold without it\u2026 I\u2019ll give
+    you my hat if you give me yours!"
+  - 'Really? Gee, thanks mister. You can have this fancy star-hat. '
+  text3:
+  - This hat is beautiful! You can have your fancy star-hat.
   _animator: {fileID: 1578116756}
 --- !u!1 &1587702817
 GameObject:
@@ -7163,7 +7368,7 @@ Transform:
   m_GameObject: {fileID: 1625830774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8399999, y: 39.190002, z: -32.02}
+  m_LocalPosition: {x: -0.48, y: 34.08, z: -32.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7402,9 +7607,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1683503413}
   - component: {fileID: 1683503412}
+  - component: {fileID: 1683503415}
+  - component: {fileID: 1683503414}
   m_Layer: 0
   m_Name: fisherman
-  m_TagString: Untagged
+  m_TagString: trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7477,12 +7684,54 @@ Transform:
   m_GameObject: {fileID: 1683503411}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.4891583, w: 0.872195}
-  m_LocalPosition: {x: -24.6, y: 19.98, z: 2.33}
+  m_LocalPosition: {x: -28.82, y: 13.11, z: 2.33}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 242117545}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 58.571}
+--- !u!114 &1683503414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683503411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c07a59ba708a67c0984902100cd05d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  textSystem: {fileID: 368348199}
+  inventory: {fileID: 420184477}
+  text1:
+  - I saw a piece of the sky fall into my well! Was that your doing?
+  - "I\u2019ve only got the one old rod, and she\u2019s seen me through more moons
+    than I can remember. You be careful with her."
+  text2: []
+  game: {fileID: 242117543}
+--- !u!65 &1683503415
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683503411}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.7533402, y: 2.49, z: 7.676502}
+  m_Center: {x: 0.26606837, y: -0.00000000486789, z: -3.9381576}
 --- !u!1 &1684905531
 GameObject:
   m_ObjectHideFlags: 0
@@ -7554,7 +7803,7 @@ Transform:
   m_GameObject: {fileID: 1684905531}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8399999, y: 39.190002, z: -32.02}
+  m_LocalPosition: {x: -0.48, y: 34.08, z: -32.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8749,7 +8998,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 988535806}
   - {fileID: 819719838}
   - {fileID: 1266711491}
   - {fileID: 906745974}
@@ -8775,8 +9023,6 @@ Transform:
   - {fileID: 1106459794}
   - {fileID: 1896840923}
   - {fileID: 1131784233}
-  - {fileID: 1042037196}
-  - {fileID: 1134416133}
   - {fileID: 1611726648}
   - {fileID: 52466180}
   - {fileID: 1696167969}
@@ -8792,8 +9038,6 @@ Transform:
   - {fileID: 2114583137}
   - {fileID: 656447803}
   - {fileID: 787033389}
-  - {fileID: 1115525776}
-  - {fileID: 23377521}
   - {fileID: 571765895}
   - {fileID: 534098954}
   - {fileID: 48960006}
@@ -9164,14 +9408,18 @@ SceneRoots:
   m_Roots:
   - {fileID: 1625830778}
   - {fileID: 2144036608}
+  - {fileID: 316153882}
+  - {fileID: 988535806}
   - {fileID: 652665451}
   - {fileID: 1684905534}
   - {fileID: 420184476}
   - {fileID: 602367949}
   - {fileID: 1578116758}
+  - {fileID: 1134416133}
+  - {fileID: 1115525776}
   - {fileID: 2037860380}
+  - {fileID: 1042037196}
   - {fileID: 2119909485}
   - {fileID: 1683503413}
-  - {fileID: 242117545}
   - {fileID: 1462308704}
   - {fileID: 463298392}
