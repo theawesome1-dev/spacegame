@@ -29,6 +29,8 @@ public class give : MonoBehaviour
             if (input.Player.Interact.WasReleasedThisFrame() && textSystem.isFinished == true)
             {
                 Debug.Log("Start text");
+                inventory.items["ladder"] = true;
+                inventory.updateUI();
                 textSystem.startText(text);
             }
         }
