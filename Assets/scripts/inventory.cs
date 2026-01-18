@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class inventory : MonoBehaviour
 {
@@ -46,7 +46,7 @@ public class inventory : MonoBehaviour
             {
                if(key.Value == true)
                     {
-                        gameObject.tintColor = new Color(255f, 255f, 255f);
+                        gameObject.color = new Color(255f, 255f, 255f);
 
                     }
             }
