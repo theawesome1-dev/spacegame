@@ -1175,7 +1175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &316153882
 Transform:
   m_ObjectHideFlags: 0
@@ -1185,11 +1185,11 @@ Transform:
   m_GameObject: {fileID: 316153881}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06333333, y: -0.11333339, z: -2.633429}
-  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.33333334}
+  m_LocalPosition: {x: -0.44, y: 33.38, z: -6.290287}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 988535806}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &316153883
 SpriteRenderer:
@@ -4228,8 +4228,7 @@ Transform:
   m_LocalPosition: {x: -0.25, y: 33.72, z: 1.61}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 316153882}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &988535807
@@ -4251,7 +4250,8 @@ MonoBehaviour:
   text2:
   - "You repaired your ship! It\u2019s time to return to the adventure. Perhaps you\u2019ll
     find time to visit this small planet later."
-  game: {fileID: 0}
+  brokenShip: {fileID: 988535804}
+  fixedShip: {fileID: 316153881}
 --- !u!65 &988535808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9408,6 +9408,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1625830778}
   - {fileID: 2144036608}
+  - {fileID: 316153882}
   - {fileID: 988535806}
   - {fileID: 652665451}
   - {fileID: 1684905534}
