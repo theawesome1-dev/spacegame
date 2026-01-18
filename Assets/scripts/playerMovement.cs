@@ -22,10 +22,18 @@ public class playerMovement : MonoBehaviour
 
     public Animator _animator;
 
+    public textSystem textSystem;
+
+    public GameObject pressX;
+
 
     void FixedUpdate()
     {
-        direction = move.action.ReadValue<Vector2>();
+        if(textSystem.isFinished == true)
+        {
+            direction = move.action.ReadValue<Vector2>();
+ 
+        }
         
         Vector3 dir = new Vector3(direction.x, 0f,direction.y);
         
@@ -63,12 +71,25 @@ public class playerMovement : MonoBehaviour
 
         if (!(rb.position.z <= -8.5 && direction.y < 0  || rb.position.z >= 2.0 && direction.y > 0))
         {
-            rb.linearDamping = (speed / maxSpeed);
-            rb.AddRelativeForce(dir* speed);
-            rb.AddForce(gravityAttractor.up * stickForce, ForceMode.Acceleration);
+        rb.linearDamping = (speed / maxSpeed);
+        rb.AddRelativeForce(dir* speed);
+        rb.AddForce(gravityAttractor.up * stickForce, ForceMode.Acceleration);
         }
     }
-    
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "trigger" && pressX != null)
+        {
+            pressX.SetActive(true);
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+         if (other.tag == "trigger" && pressX != null)
+        {
+            pressX.SetActive(true);
+        }
+    }
 
     void onMove(InputValue inputValue)
     {

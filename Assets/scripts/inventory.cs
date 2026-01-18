@@ -17,9 +17,9 @@ public class inventory : MonoBehaviour
     };
      public Dictionary<string, bool> shipParts = new Dictionary<string, bool>()
     {
-        {"treePart", false},
-        {"waterPart", false},
-        {"kidPart", false}
+        {"thruster", false},
+        {"ship leg", false},
+        {"ship hull", false}
     };
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,7 +38,7 @@ public class inventory : MonoBehaviour
             }
            }
         }
-          foreach(var key in items)
+          foreach(var key in shipParts)
         {
            foreach(Image gameObject in parts)
            {

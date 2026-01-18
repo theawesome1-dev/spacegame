@@ -26,6 +26,11 @@ public class textSystem : MonoBehaviour
     void Start()
     {
                 gui.text = string.Empty;
+                        inputting = false;
+        isFinished = false;
+        pannelText.SetActive(true);
+        index  = 0;
+        gui.text = string.Empty;
     input = new InputSystem_Actions();
     }
 
