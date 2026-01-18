@@ -1,10 +1,11 @@
 using UnityEngine;
 
-public class give : MonoBehaviour
+public class hatguyGive : MonoBehaviour
 {
     public textSystem textSystem;
     public inventory inventory;
-    public string[] text;
+    public string[] text1;
+    public string[] text2;
     
     public Animator _animator;
 
@@ -28,15 +29,24 @@ public class give : MonoBehaviour
 
         if (other.tag == "Player")
         {
-           // Debug.Log("plate");
+            //Debug.Log("in hat range");
             if (input.Player.Interact.WasReleasedThisFrame() && textSystem.isFinished == true)
             {
                 Debug.Log("Start text");
-                inventory.items["propeller"] = true;
-                inventory.updateUI();
-                _animator.SetBool("HatTaken", true);
-                textSystem.startText(text);
-                print(inventory.items["propeller"]);
+                //if have hat
+                if (inventory.items["propeller"] == true)
+                {
+                    textSystem.startText(text2);
+                    inventory.items["propeller"] = false;
+                    inventory.shipParts["thruster"] = true;
+                    _animator.SetBool("HasNewHat", true);
+                    inventory.updateUI();
+                }
+                else
+                {
+                    print(inventory.items["propeller"]);
+                    textSystem.startText(text1);
+                }
             }
         }
     }
